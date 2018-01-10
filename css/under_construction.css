@@ -1,11 +1,11 @@
-html{
-	height: 100%;
-}
-
-.construction{
-	background: url(../img/UnderConstructionBG.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-	background-attachment: fixed;
-	background-color: black;
+html{
+	height: 100%;
+}
+
+body{
+	background: url(../img/UnderConstructionBG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-attachment: fixed;
+	background-color: black;
 }

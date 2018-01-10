@@ -1,37 +1,181 @@
+.game-list{
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	position: relative;
+	left: 80px;
+}
+
+@media all and (min-width: 800px) {
+    .game-list {
+		left: calc((100% - 640px)/2);
+    }
+}
+
+.game-list > li{
+	display: inline-block;
+	text-decoration: none;
+	width: 160px;
+	text-align: center;
+}
+
+.game-list > li > a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.game-list > li > a:hover{
+	color: blue;
+}
+
+.game-list > li > a:visited{
+	color: purple;
+}
+
+.game-list > li > a > img{
+	width: 100px;
+	border-style: solid;
+	border-color: #867a76;
+	border-width: 3px;
+}
+
+.game-list > li > a:hover > img{
+	border-color: blue;
+}
+
+.game-list > li > a:visited > img{
+	border-color: purple;
+}
+
+.parallax {
+
+    /* Full height */
+    height: 100%;
+	min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.floating-box{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	left: calc((100% - 750px) / 4 + 150px);
+	color: white;
+	white-space: nowrap;
+}
+
+@media all and (max-width: 750px) {
+	.floating-box{
+		left: 150px;
+	}
+}
+
+.floating-box2{
+	position: absolute;
+	top: 10%;
+	left: 100px;
+	color: white;
+	white-space: nowrap;
+}
+
+#title{
+	font-size: 50px;
+	letter-spacing: 0.15em;
+	font-weight: bold;
+}
+#resume{	width:100%; 	height: 1000px;	padding: 0 0;}
+#sub-title{
+	font-size: 30px;
+}
+
+.text-block{
+	color: #777;
+	background-color:white;
+	padding: 80px 0;
+}
+
+#text-format{
+	padding: 50px 80px;
+	text-align: center;
+	text-align: justify;
+}
 body{
-	background-color: black;	
+	background-color: #40464c;	
 	margin: 0;
 	padding: 0;
-	font-family: 'Arial', serif;
-}
-
-.nav {
+	font-family: "Arial", serif;
+	font-size: 15px;	
+}
+.nav-bar{
 	background-color: #595959;
-	color: #FFFFFF;
-	opacity: 0.6;
-	list-style: none;
-	text-align: center;
-	padding: 20px 0 20px 0;
-}
-
-.nav > li {
-	display: inline-block;
-	padding-right: 50px;
-}
-
-.nav > li > a {
-	text-decoration: none;
-	color: #FFFFFF;
-}
-
-.nav > li > a {
-	color: #c1c1c1;
-}
-
-.construction{
-	background: url(../img/UnderConstructionBG.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-	background-attachment: fixed;
-
+	background-color: rgba(1, 1, 1, 0.5);
+	position: fixed;
+	height: 50px;
+	width:100%;
+    top:0;
+}
+
+.nav-strip{
+	position: absolute;
+	text-decoration: none;
+	list-style: none;
+	white-space: nowrap;
+}
+
+.nav-strip > li {
+	display: inline-block;
+}
+
+#social-strip{
+	left: 53px;
+}
+
+#social-strip > li{
+	padding-right: 10px;
+}
+
+#internal-strip{
+	right:53px;
+}
+/* Default for smaller window size*/
+@media all and (max-width: 743px) {
+    #internal-strip{
+        margin-left: 0px;
+        left: 194px;
+    }
+}
+
+#internal-strip > li{
+	padding-right: 20px;
+}
+
+#bg-image{
+	width:980px;
+	position: relative;
+    left: calc((100% - 980px) * 0.5);
+}
+
+.nav-strip > li > a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#internal-strip > li > a:hover {
+	color: #2196f3; /*light blue*/
+}
+
+.nav-strip > li > a > img{
+	height: 20px;
+	width: 20px;
 }

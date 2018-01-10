@@ -1,8 +1,14 @@
-<ul class="nav">
+<header class="nav-bar">
+<ul class="nav-strip" id="internal-strip">
 	<li><a href="/index.php">Home</a></li>
-	<li><a href="/pages/wip.php">About</a></li>                     <!-- pages/about.php -->
-	<li><a href="/pages/wip.php">Games</a></li>     <!-- pages/games.php -->
-	<li><a href="/pages/wip.php">Social</a></li>   <!-- pages/social.php -->
-	<li><a href="/pages/wip.php">Contact</a></li> <!-- pages/contact.php -->
-	<li><a href="/pages/wip.php">Hire Me!</a></li> <!-- pages/hireme.php -->
+	<li><a href="/pages/about.php">About</a></li>
+	<li><a href="/pages/games.php">Games</a></li>
+	<li><a href="/pages/resume.php">Resume</a></li>
+	<li><a href="/pages/contact.php">Contact</a></li>
 </ul>
+<ul class="nav-strip" id="social-strip" >
+	<li><a href="https://www.facebook.com/SmartDallas" target="_blank"><img src="/img/facebook-logo.png"/></a></li>
+	<li><a href="https://www.linkedin.com/in/smartdallas/" target="_blank"><img src="/img/linkedin-logo.png"/></a></li>
+	<li><a href="https://github.com/JimmyWorks" target="_blank"><img src="/img/github-logo.png"/></a></li>
+</ul>
+</header>

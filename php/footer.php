@@ -1,1 +1,1 @@
-<p>&copy; 2018 Jimmy H. Nguyen</p>
+<div class="text-block" id="text-format"><p>&copy; 2018 Jimmy H. Nguyen</p></div>

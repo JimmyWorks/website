@@ -19,10 +19,18 @@
 			<div class="parallax" style="background-image: url('/img/movingbike.jpg');"></div>
 		</main>
 		<header>
-			<?php include '/home2/jimmywor/public_html/php/navbar.php'; ?>
+			<?php
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/php/navbar.php";
+				include_once($path);
+		    ?>
 		</header>
 		<footer>
-		    <?php include '/home2/jimmywor/public_html/php/footer.php'; ?>
+			<?php
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/php/footer.php";
+				include_once($path);
+		    ?>
 		</footer>
 	</body>
 </html>
